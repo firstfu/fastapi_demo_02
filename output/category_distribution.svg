@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#f8f9fa"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">類別分布圖</text>
+<line x1="60" y1="60" x2="60" y2="540" stroke="#333" stroke-width="2"/>
+<line x1="60" y1="540" x2="740" y2="540" stroke="#333" stroke-width="2"/>
+<rect x="69.71428571428572" y="373.8461538461538" width="77.71428571428572" height="166.15384615384616" fill="hsl(0.0, 70%, 50%)" opacity="0.8"/>
+<text x="108.57142857142858" y="368.8461538461538" text-anchor="middle" font-size="12" fill="#333">108.0</text>
+<text x="108.57142857142858" y="560" text-anchor="middle" font-size="10" fill="#666">CPU</text>
+<rect x="166.85714285714286" y="60.0" width="77.71428571428572" height="480.0" fill="hsl(51.42857142857143, 70%, 50%)" opacity="0.8"/>
+<text x="205.71428571428572" y="55.0" text-anchor="middle" font-size="12" fill="#333">125.0</text>
+<text x="205.71428571428572" y="560" text-anchor="middle" font-size="10" fill="#666">Network</text>
+<rect x="264.0" y="281.53846153846155" width="77.71428571428572" height="258.46153846153845" fill="hsl(102.85714285714286, 70%, 50%)" opacity="0.8"/>
+<text x="302.8571428571429" y="276.53846153846155" text-anchor="middle" font-size="12" fill="#333">113.0</text>
+<text x="302.8571428571429" y="560" text-anchor="middle" font-size="10" fill="#666">Analytics</text>
+<rect x="361.14285714285717" y="78.46153846153845" width="77.71428571428572" height="461.53846153846155" fill="hsl(154.28571428571428, 70%, 50%)" opacity="0.8"/>
+<text x="400.0" y="73.46153846153845" text-anchor="middle" font-size="12" fill="#333">124.0</text>
+<text x="400.0" y="560" text-anchor="middle" font-size="10" fill="#666">Security</text>
+<rect x="458.2857142857142" y="133.84615384615387" width="77.71428571428572" height="406.15384615384613" fill="hsl(205.71428571428572, 70%, 50%)" opacity="0.8"/>
+<text x="497.1428571428571" y="128.84615384615387" text-anchor="middle" font-size="12" fill="#333">121.0</text>
+<text x="497.1428571428571" y="560" text-anchor="middle" font-size="10" fill="#666">Database</text>
+<rect x="555.4285714285713" y="336.9230769230769" width="77.71428571428572" height="203.07692307692307" fill="hsl(257.14285714285717, 70%, 50%)" opacity="0.8"/>
+<text x="594.2857142857142" y="331.9230769230769" text-anchor="middle" font-size="12" fill="#333">110.0</text>
+<text x="594.2857142857142" y="560" text-anchor="middle" font-size="10" fill="#666">Memory</text>
+<rect x="652.5714285714286" y="540.0" width="77.71428571428572" height="0.0" fill="hsl(308.57142857142856, 70%, 50%)" opacity="0.8"/>
+<text x="691.4285714285714" y="535.0" text-anchor="middle" font-size="12" fill="#333">99.0</text>
+<text x="691.4285714285714" y="560" text-anchor="middle" font-size="10" fill="#666">Storage</text>
+</svg>
