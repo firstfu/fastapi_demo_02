@@ -101,27 +101,27 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ### 用戶管理 (`/users`)
 
-| 方法 | 端點 | 描述 |
-|------|------|------|
-| POST | `/users/` | 創建新用戶 |
-| GET | `/users/` | 獲取用戶列表 |
-| GET | `/users/{user_id}` | 獲取特定用戶 |
-| GET | `/users/{user_id}/with-posts` | 獲取用戶及其文章 |
-| PUT | `/users/{user_id}` | 更新用戶信息 |
-| DELETE | `/users/{user_id}` | 刪除用戶 |
+| 方法   | 端點                          | 描述             |
+| ------ | ----------------------------- | ---------------- |
+| POST   | `/users/`                     | 創建新用戶       |
+| GET    | `/users/`                     | 獲取用戶列表     |
+| GET    | `/users/{user_id}`            | 獲取特定用戶     |
+| GET    | `/users/{user_id}/with-posts` | 獲取用戶及其文章 |
+| PUT    | `/users/{user_id}`            | 更新用戶信息     |
+| DELETE | `/users/{user_id}`            | 刪除用戶         |
 
 ### 文章管理 (`/posts`)
 
-| 方法 | 端點 | 描述 |
-|------|------|------|
-| POST | `/posts/` | 創建新文章 |
-| GET | `/posts/` | 獲取文章列表 |
-| GET | `/posts/with-authors` | 獲取文章及作者信息 |
-| GET | `/posts/{post_id}` | 獲取特定文章 |
-| GET | `/posts/{post_id}/with-author` | 獲取文章及作者信息 |
-| GET | `/posts/user/{user_id}` | 獲取特定用戶的文章 |
-| PUT | `/posts/{post_id}` | 更新文章 |
-| DELETE | `/posts/{post_id}` | 刪除文章 |
+| 方法   | 端點                           | 描述               |
+| ------ | ------------------------------ | ------------------ |
+| POST   | `/posts/`                      | 創建新文章         |
+| GET    | `/posts/`                      | 獲取文章列表       |
+| GET    | `/posts/with-authors`          | 獲取文章及作者信息 |
+| GET    | `/posts/{post_id}`             | 獲取特定文章       |
+| GET    | `/posts/{post_id}/with-author` | 獲取文章及作者信息 |
+| GET    | `/posts/user/{user_id}`        | 獲取特定用戶的文章 |
+| PUT    | `/posts/{post_id}`             | 更新文章           |
+| DELETE | `/posts/{post_id}`             | 刪除文章           |
 
 ## 使用示例
 
@@ -238,3 +238,5 @@ MIT License
 ## 貢獻
 
 歡迎提交 Issue 和 Pull Request！
+
+uv run uvicorn main:app --reload --host 0.0.0.0 --port 8004
