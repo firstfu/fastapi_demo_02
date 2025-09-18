@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from database import engine, Base
-from routers import users, posts
+from routers import users, posts, categories
 
 app = FastAPI(
     title="FastAPI CRUD Demo",
@@ -12,6 +12,7 @@ Base.metadata.create_all(bind=engine)
 
 app.include_router(users.router)
 app.include_router(posts.router)
+app.include_router(categories.router)
 
 @app.get("/")
 def root():

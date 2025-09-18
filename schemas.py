@@ -6,6 +6,7 @@ class UserBase(BaseModel):
     username: str
     email: EmailStr
     full_name: Optional[str] = None
+    age: Optional[int] = None
 
 class UserCreate(UserBase):
     pass
@@ -14,6 +15,7 @@ class UserUpdate(BaseModel):
     username: Optional[str] = None
     email: Optional[EmailStr] = None
     full_name: Optional[str] = None
+    age: Optional[int] = None
 
 class User(UserBase):
     id: int
@@ -48,3 +50,20 @@ class UserWithPosts(User):
 
 class PostWithAuthor(Post):
     author: User
+
+class CategoryBase(BaseModel):
+    name: str
+    description: Optional[str] = None
+
+class CategoryCreate(CategoryBase):
+    pass
+
+class CategoryUpdate(BaseModel):
+    name: Optional[str] = None
+    description: Optional[str] = None
+
+class Category(CategoryBase):
+    id: int
+
+    class Config:
+        from_attributes = True
