@@ -10,6 +10,8 @@ class User(Base):
     username = Column(String(50), unique=True, index=True, nullable=False)
     email = Column(String(100), unique=True, index=True, nullable=False)
     full_name = Column(String(100), nullable=True)
+    # 新增字段
+    age = Column(Integer, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
@@ -26,3 +28,12 @@ class Post(Base):
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
     author = relationship("User", back_populates="posts")
+
+
+
+class Category(Base):
+    __tablename__="categories"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(200), nullable=True)
+    description = Column(Text, nullable=True)
